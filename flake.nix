@@ -19,6 +19,9 @@
 
     homebrew-cask.url = "github:homebrew/homebrew-cask";
     homebrew-cask.flake = false;
+
+    homebrew-supabase.url = "github:supabase/homebrew-tap";
+    homebrew-supabase.flake = false;
   };
 
   outputs =
@@ -84,6 +87,7 @@
               taps = {
                 "homebrew/homebrew-core" = inputs.homebrew-core;
                 "homebrew/homebrew-cask" = inputs.homebrew-cask;
+                "supabase/tap" = inputs.homebrew-supabase;
               };
 
               # Optional: Enable fully-declarative tap management

@@ -61,7 +61,7 @@
       "orbstack" # needs Sonoma+ to be installed
       "cloudflare-warp"
       "warp"
-      "supabase/tap/supabase"
+      "supabase"
       "zed"
     ];
     masApps = {
