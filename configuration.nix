@@ -27,4 +27,8 @@
 
   # Touch ID for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
+
+  # Add direnv
+  programs.direnv.enable = true;
+  programs.direnv.nix-direnv.enable = true;
 }
