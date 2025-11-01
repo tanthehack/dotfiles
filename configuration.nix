@@ -58,8 +58,10 @@
       "mas" # needed for `masApps` down below
     ];
     casks = [
-      # "orbstack" # needs Sonoma+ to be installed
+      "orbstack" # needs Sonoma+ to be installed
+      "cloudflare-warp"
       "warp"
+      "supabase/tap/supabase"
       "zed"
     ];
     masApps = {
