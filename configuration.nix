@@ -42,4 +42,26 @@
   # Add direnv
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
+
+  # Homebrew
+  homebrew = {
+    enable = true;
+    onActivation = {
+      cleanup = "zap";
+      autoUpdate = true;
+      upgrade = true;
+    };
+    # so that nix-darwin knows about the taps nix-homebrew brings in
+    taps = builtins.attrNames config.nix-homebrew.taps;
+    brews = [
+      "mas" # needed for `masApps` down below
+    ];
+    greedyCasks = true;
+    casks = [
+      # "orbstack" # needs Sonoma+ to be installed
+    ];
+    masApps = {
+      Telegram = 747648890;
+    };
+  };
 }
