@@ -59,6 +59,8 @@
     ];
     casks = [
       # "orbstack" # needs Sonoma+ to be installed
+      "warp"
+      "zed"
     ];
     masApps = {
       Telegram = 747648890;

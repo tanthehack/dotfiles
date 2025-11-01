@@ -9,8 +9,9 @@
 
     pkgs.nodejs
     pkgs.bun
-
     pkgs.gh
+
+    pkgs.appcleaner
   ];
 
   programs.git = {
