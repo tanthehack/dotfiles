@@ -1,7 +1,15 @@
-{ ... }:
+{ pkgs, ... }:
 {
   home.username = "tanielou";
   home.homeDirectory = "/Users/tanielou";
+
+  home.packages = [
+    pkgs.nil
+    pkgs.nixd
+
+    pkgs.nodejs
+    pkgs.bun
+  ];
 
   programs.git = {
     enable = true;
