@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ inputs, ... }:
 {
   users.users.tanielou.home = "/Users/tanielou";
 
