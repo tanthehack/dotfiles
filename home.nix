@@ -9,6 +9,8 @@
 
     pkgs.nodejs
     pkgs.bun
+
+    pkgs.gh
   ];
 
   programs.git = {

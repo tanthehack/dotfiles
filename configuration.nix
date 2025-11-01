@@ -53,10 +53,10 @@
     };
     # so that nix-darwin knows about the taps nix-homebrew brings in
     taps = builtins.attrNames config.nix-homebrew.taps;
+    greedyCasks = true;
     brews = [
       "mas" # needed for `masApps` down below
     ];
-    greedyCasks = true;
     casks = [
       # "orbstack" # needs Sonoma+ to be installed
     ];
