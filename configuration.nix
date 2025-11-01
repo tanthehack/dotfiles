@@ -1,13 +1,11 @@
-{ inputs, ... }:
+{ inputs, config, ... }:
 {
+  system.primaryUser = "tanielou";
   users.users.tanielou.home = "/Users/tanielou";
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = [ ];
-
-  # Necessary for using flakes on this system.
-  nix.settings.experimental-features = "nix-command flakes";
 
   # Enable alternative shell support in nix-darwin.
   # programs.fish.enable = true;
@@ -24,6 +22,19 @@
 
   # Use Determinate Nix
   nix.enable = false;
+
+  # Nix settings
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.flake.source = inputs.nixpkgs;
+  nix.settings = {
+    experimental-features = "nix-command flakes";
+    optimise.automatic = true;
+    gc = {
+      automatic = true;
+    };
+
+    channel.enable = false;
+  };
 
   # Touch ID for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
