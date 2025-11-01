@@ -56,12 +56,13 @@
     greedyCasks = true;
     brews = [
       "mas" # needed for `masApps` down below
+      "supabase"
+      "pnpm"
     ];
     casks = [
       "orbstack" # needs Sonoma+ to be installed
       "cloudflare-warp"
       "warp"
-      "supabase"
       "zed"
     ];
     masApps = {

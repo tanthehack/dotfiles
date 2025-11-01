@@ -87,7 +87,7 @@
               taps = {
                 "homebrew/homebrew-core" = inputs.homebrew-core;
                 "homebrew/homebrew-cask" = inputs.homebrew-cask;
-                "supabase/tap" = inputs.homebrew-supabase;
+                "supabase/homebrew-tap" = inputs.homebrew-supabase;
               };
 
               # Optional: Enable fully-declarative tap management
