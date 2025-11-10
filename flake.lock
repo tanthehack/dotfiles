@@ -121,6 +121,22 @@
         "type": "github"
       }
     },
+    "homebrew-fuse": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1762390318,
+        "narHash": "sha256-gBUlYhi09FcHkG5MVCasU6SJhSLPaeCWXeQbMwbmrXY=",
+        "owner": "gromgit",
+        "repo": "homebrew-fuse",
+        "rev": "0c5e47a7f4da175087189875206a921dbf8d180d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gromgit",
+        "repo": "homebrew-fuse",
+        "type": "github"
+      }
+    },
     "homebrew-supabase": {
       "flake": false,
       "locked": {
@@ -252,6 +268,7 @@
         "home-manager": "home-manager",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "homebrew-fuse": "homebrew-fuse",
         "homebrew-supabase": "homebrew-supabase",
         "mac-app-util": "mac-app-util",
         "nix-darwin": "nix-darwin",

@@ -22,6 +22,9 @@
 
     homebrew-supabase.url = "github:supabase/homebrew-tap";
     homebrew-supabase.flake = false;
+
+    homebrew-fuse.url = "github:gromgit/homebrew-fuse";
+    homebrew-fuse.flake = false;
   };
 
   outputs =
@@ -88,6 +91,7 @@
                 "homebrew/homebrew-core" = inputs.homebrew-core;
                 "homebrew/homebrew-cask" = inputs.homebrew-cask;
                 "supabase/homebrew-tap" = inputs.homebrew-supabase;
+                "gromgit/homebrew-fuse" = inputs.homebrew-fuse;
               };
 
               # Optional: Enable fully-declarative tap management

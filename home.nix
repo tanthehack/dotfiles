@@ -12,6 +12,9 @@
     pkgs.gh
 
     pkgs.appcleaner
+    # pkgs.unar
+
+    pkgs.ffmpeg_8
   ];
 
   programs.git = {
@@ -19,7 +22,7 @@
 
     settings = {
       user.name = "Tanyalouise";
-      user.email = "tanielou@gmail.com";
+      user.email = "tanielou10@gmail.com";
 
       alias = {
         sw = "switch";
@@ -44,6 +47,25 @@
       rerere.enabled = true;
       rerere.autoupdate = true;
       merge.conflictstyle = "zdiff3";
+    };
+  };
+
+  programs.starship = {
+    enable = true;
+
+    settings = {
+      character = {
+        success_symbol = "[➜](bold green)";
+        error_symbol = "[✖](bold red)";
+      };
+      hostname = {
+        ssh_only = false;
+        format = "[$hostname](bold orange): ";
+      };
+      username = {
+        show_always = true;
+        format = "[$user](bold lavender)[@](bold yellow)";
+      };
     };
   };
 

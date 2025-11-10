@@ -64,6 +64,8 @@
       "cloudflare-warp"
       "warp"
       "zed"
+      "mounty"
+      "macfuse"
     ];
     masApps = {
       Telegram = 747648890;
