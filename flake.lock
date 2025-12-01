@@ -121,6 +121,22 @@
         "type": "github"
       }
     },
+    "homebrew-encore": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1764257281,
+        "narHash": "sha256-Bmn7P5orp7HYDx/QbEAG8l9IwCAFa2fcFgzrFfiU8Io=",
+        "owner": "encoredev",
+        "repo": "homebrew-tap",
+        "rev": "89ea3626a34ca8f60667d4d3918d69719a99fe7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "encoredev",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
     "homebrew-fuse": {
       "flake": false,
       "locked": {
@@ -268,6 +284,7 @@
         "home-manager": "home-manager",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "homebrew-encore": "homebrew-encore",
         "homebrew-fuse": "homebrew-fuse",
         "homebrew-supabase": "homebrew-supabase",
         "mac-app-util": "mac-app-util",

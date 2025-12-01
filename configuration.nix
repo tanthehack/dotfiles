@@ -57,6 +57,7 @@
     brews = [
       "mas" # needed for `masApps` down below
       "supabase"
+      "encore"
       "pnpm"
     ];
     casks = [

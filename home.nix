@@ -12,7 +12,8 @@
     pkgs.gh
 
     pkgs.appcleaner
-    # pkgs.unar
+    
+    pkgs.shopify-cli
 
     pkgs.ffmpeg_8
   ];
