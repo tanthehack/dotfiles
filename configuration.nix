@@ -59,6 +59,7 @@
       "supabase"
       "encore"
       "pnpm"
+      "spicetify-cli"
     ];
     casks = [
       "orbstack" # needs Sonoma+ to be installed

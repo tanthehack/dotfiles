@@ -12,10 +12,12 @@
     pkgs.gh
 
     pkgs.appcleaner
-    
+
     pkgs.shopify-cli
 
     pkgs.ffmpeg_8
+
+    pkgs.just
   ];
 
   programs.git = {
