@@ -20,6 +20,8 @@
     pkgs.just
   ];
 
+  programs.zoxide.enable = true;
+
   programs.git = {
     enable = true;
 

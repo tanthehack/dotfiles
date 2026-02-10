@@ -70,7 +70,7 @@
       "macfuse"
     ];
     masApps = {
-      Telegram = 747648890;
+        Telegram = 747648890;
     };
   };
 }
