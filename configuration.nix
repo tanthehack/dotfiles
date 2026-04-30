@@ -60,6 +60,7 @@
       "encore"
       "pnpm"
       "spicetify-cli"
+      "python"
     ];
     casks = [
       "orbstack" # needs Sonoma+ to be installed
@@ -70,7 +71,7 @@
       "macfuse"
     ];
     masApps = {
-        Telegram = 747648890;
+      Telegram = 747648890;
     };
   };
 }

@@ -18,6 +18,7 @@
     pkgs.ffmpeg_8
 
     pkgs.just
+    pkgs.zoxide
   ];
 
   programs.zoxide.enable = true;
