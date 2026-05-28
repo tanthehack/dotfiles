@@ -61,6 +61,7 @@
       "pnpm"
       "spicetify-cli"
       "python"
+      "git-lfs"
     ];
     casks = [
       "orbstack" # needs Sonoma+ to be installed
