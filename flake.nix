@@ -5,7 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     treefmt-nix.url = "github:numtide/treefmt-nix";
     systems.url = "github:nix-systems/default";
-    mac-app-util.url = "github:hraban/mac-app-util/link-contents";
+    mac-app-util.url = "github:hraban/mac-app-util";
+    # mac-app-util.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
 
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
@@ -74,7 +75,7 @@
             ];
             home-manager.extraSpecialArgs = { inherit inputs; };
 
-            home-manager.users.tanielou = ./home.nix;
+            home-manager.users.tanyalouise = ./home.nix;
           }
 
           nix-homebrew.darwinModules.nix-homebrew
@@ -87,7 +88,7 @@
               enableRosetta = true;
 
               # User owning the Homebrew prefix
-              user = "tanielou";
+              user = "tanyalouise";
 
               # Optional: Declarative tap management
               taps = {

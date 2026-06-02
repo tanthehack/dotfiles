@@ -1,7 +1,7 @@
 { inputs, config, ... }:
 {
-  system.primaryUser = "tanielou";
-  users.users.tanielou.home = "/Users/tanielou";
+  system.primaryUser = "tanyalouise";
+  users.users.tanyalouise.home = "/Users/tanyalouise";
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
@@ -66,7 +66,7 @@
     casks = [
       "orbstack" # needs Sonoma+ to be installed
       "cloudflare-warp"
-      "warp"
+      # "warp"
       "zed"
       "mounty"
       "macfuse"

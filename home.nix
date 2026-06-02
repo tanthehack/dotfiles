@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
-  home.username = "tanielou";
-  home.homeDirectory = "/Users/tanielou";
+  home.username = "tanyalouise";
+  home.homeDirectory = "/Users/tanyalouise";
 
   home.packages = [
     pkgs.nil
@@ -10,6 +10,8 @@
     pkgs.nodejs
     pkgs.bun
     pkgs.gh
+
+   pkgs.claude-code
 
     pkgs.appcleaner
 
@@ -85,5 +87,5 @@
   # You can update Home Manager without changing this value. See
   # the Home Manager release notes for a list of state version
   # changes in each release.
-  home.stateVersion = "25.05";
+  home.stateVersion = "26.05";
 }
