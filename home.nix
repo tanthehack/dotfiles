@@ -11,7 +11,7 @@
     pkgs.bun
     pkgs.gh
 
-   pkgs.claude-code
+    pkgs.claude-code
 
     pkgs.appcleaner
 

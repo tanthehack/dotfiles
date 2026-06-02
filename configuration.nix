@@ -66,7 +66,7 @@
     casks = [
       "orbstack" # needs Sonoma+ to be installed
       "cloudflare-warp"
-      # "warp"
+      "warp"
       "zed"
       "mounty"
       "macfuse"

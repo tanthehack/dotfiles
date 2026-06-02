@@ -5,8 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     treefmt-nix.url = "github:numtide/treefmt-nix";
     systems.url = "github:nix-systems/default";
-    mac-app-util.url = "github:hraban/mac-app-util";
-    # mac-app-util.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
 
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
@@ -39,7 +37,6 @@
       home-manager,
       systems,
       treefmt-nix,
-      mac-app-util,
       nix-homebrew,
       ...
     }:
@@ -64,14 +61,11 @@
         modules = [
           ./configuration.nix
 
-          mac-app-util.darwinModules.default
-
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.sharedModules = [
-              mac-app-util.homeManagerModules.default
             ];
             home-manager.extraSpecialArgs = { inherit inputs; };
 
