@@ -62,6 +62,7 @@
       "spicetify-cli"
       "python"
       "git-lfs"
+      "mole"
     ];
     casks = [
       "orbstack" # needs Sonoma+ to be installed
