@@ -59,8 +59,6 @@
       "supabase"
       "encore"
       "pnpm"
-      "spicetify-cli"
-      "python"
       "git-lfs"
       "mole"
     ];

@@ -21,6 +21,10 @@
 
     pkgs.just
     pkgs.zoxide
+
+    pkgs.python3
+
+    pkgs.rustup
   ];
 
   programs.zoxide.enable = true;
