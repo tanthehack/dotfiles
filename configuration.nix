@@ -61,6 +61,7 @@
       "pnpm"
       "git-lfs"
       "mole"
+      "bitwarden-cli" # `bw` CLI
     ];
     casks = [
       "orbstack" # needs Sonoma+ to be installed
@@ -69,6 +70,7 @@
       "zed"
       "mounty"
       "macfuse"
+      "bitwarden" # desktop app
     ];
     masApps = {
       Telegram = 747648890;

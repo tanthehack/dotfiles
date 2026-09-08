@@ -22,9 +22,13 @@
     pkgs.just
     pkgs.zoxide
 
-    pkgs.python3
+    (pkgs.python3.withPackages (ps: [
+      ps.pip
+    ]))
 
     pkgs.rustup
+
+    pkgs.oh-my-posh
   ];
 
   programs.zoxide.enable = true;
