@@ -33,6 +33,15 @@
 
   programs.zoxide.enable = true;
 
+  home.sessionPath = [ "/Users/tanyalouise/.lmstudio/bin" ];
+
+  programs.zsh = {
+    enable = true;
+    initContent = ''
+      eval "$(oh-my-posh init zsh --config ${pkgs.oh-my-posh}/share/oh-my-posh/themes/jandedobbeleer.omp.json)"
+    '';
+  };
+
   programs.git = {
     enable = true;
 
@@ -63,25 +72,6 @@
       rerere.enabled = true;
       rerere.autoupdate = true;
       merge.conflictstyle = "zdiff3";
-    };
-  };
-
-  programs.starship = {
-    enable = true;
-
-    settings = {
-      character = {
-        success_symbol = "[➜](bold green)";
-        error_symbol = "[✖](bold red)";
-      };
-      hostname = {
-        ssh_only = false;
-        format = "[$hostname](bold orange): ";
-      };
-      username = {
-        show_always = true;
-        format = "[$user](bold lavender)[@](bold yellow)";
-      };
     };
   };
 
