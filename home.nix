@@ -22,6 +22,8 @@
     pkgs.just
     pkgs.zoxide
 
+    pkgs.codex
+
     (pkgs.python3.withPackages (ps: [
       ps.pip
     ]))
@@ -38,7 +40,7 @@
   programs.zsh = {
     enable = true;
     initContent = ''
-      eval "$(oh-my-posh init zsh --config ${pkgs.oh-my-posh}/share/oh-my-posh/themes/jandedobbeleer.omp.json)"
+      eval "$(oh-my-posh init zsh --config ${pkgs.oh-my-posh}/share/oh-my-posh/themes/catppuccin_frappe.omp.json)"
     '';
   };
 
