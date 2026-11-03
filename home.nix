@@ -31,6 +31,8 @@
     pkgs.rustup
 
     pkgs.oh-my-posh
+    
+    pkgs.glab
   ];
 
   programs.zoxide.enable = true;
@@ -46,6 +48,7 @@
 
   programs.git = {
     enable = true;
+    lfs.enable = true;
 
     settings = {
       user.name = "Tanyalouise";
